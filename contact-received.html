@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiago Diogenes</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/exe3okr.css" />
+    <script src="https://kit.fontawesome.com/bf1c73beb5.js" crossorigin="anonymous"></script>
+    <script defer src="./js/app.js"></script>
+  </head>
+
+  <body class="light">
+    <div class="fullscreen-bg">
+      <video autoplay muted loop poster="./images/matrix.gif" class="fullscreen-bg__video">
+        <source src="./videos/matrix.mp4" type="video/mp4" />
+        <!-- <source src="./videos/matrix-webm.webm" type="video/webm" /> -->
+      </video>
+    </div>
+    <header>
+      <div class="header-logo">
+        <a class="header-links" href="/">
+          <p class="header-letters">TMD</p>
+        </a>
+      </div>
+      <div class="header-nav">
+        <a class="header-links" href="./about">About Me</a>
+        <a class="header-links" href="./contact">Contact</a>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li class="nav-option">
+          <button id="light" class="nav-button">
+            <i class="fas fa-sun nav-i"></i>
+            <span class="nav-text">Light</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="dark" class="nav-button">
+            <i class="fas fa-moon nav-i"></i>
+            <span class="nav-text">Dark</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="terminal" class="nav-button" value="off" onclick="terminalInit()">
+            <i class="fas fa-terminal nav-i"></i>
+            <span class="nav-text">Terminal</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="matrix" class="nav-button">
+            <img src="./images/matrixlogo.png" class="matrix-img" />
+            <span class="nav-text">Matrix</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="eightBit" class="nav-button">
+            <i class="fas fa-gamepad nav-i"></i>
+            <span class="nav-text">8Bit</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="terminal-row" id="terminalDiv">
+        <p class="terminal-header">
+          Hi! Type about, contact, or projects for more information. If you feel lost, type help.
+        </p>
+        <p class="terminal-text">client@TMD:~$</p>
+        <input id="terminalInput" class="terminal-input" type="text" onkeydown="terminalEnter(this)" />
+      </div>
+      <div id="mainDivBlock">
+        <div class="contact-call-to-ask">
+          <h2 id="contactCall" class="contact-call">Thank you for getting in touch!</h2>
+          <p id="contactCallSubheader" class="contact-call-subheader" style="font-size: 16px; margin-top: 12px;">
+            I'm thrilled to hear from you and I will get in touch really soon!
+          </p>
+          <p
+            id="contactCallSubheaderLast"
+            class="contact-call-subheader"
+            style="font-size: 16px !important; margin-top: 6px;"
+          >
+            Have an awesome day!
+          </p>
+          <div style="text-align: center; margin-top: 16px;">
+            <a href="/">
+              <button class="contact-call-sent-button">Go Back to Home</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- <div class="footer-social">
+        <div class="footer-social-image-container">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="footer-social-image-container">
+          <i class="fab fa-github-square"></i>
+        </div>
+        <div class="footer-social-image-container">
+          <a class="footer-links" href="mailto:thiagomdiogenes@gmail.com">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </div>
+      </div> -->
+      <div class="footer-copyright">
+        <small>&copy; 2020 Developed by Thiago Diogenes</small>
+      </div>
+    </footer>
+    <script src="./js/firebase-contact.js"></script>
+  </body>
+</html>

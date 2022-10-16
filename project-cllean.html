@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiago Diogenes - Project Metronomo.co</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/exe3okr.css" />
+    <script src="https://kit.fontawesome.com/bf1c73beb5.js" crossorigin="anonymous"></script>
+    <script defer src="./js/app.js"></script>
+  </head>
+
+  <body class="light">
+    <div style="display: none;" class="fullscreen-bg">
+      <video autoplay muted loop poster="./images/matrix.gif" class="fullscreen-bg__video">
+        <source src="./videos/matrix.mp4" type="video/mp4" />
+        <!-- <source src="./videos/matrix-webm.webm" type="video/webm" /> -->
+      </video>
+    </div>
+    <header>
+      <div class="header-logo">
+        <a class="header-links" href="/">
+          <p class="header-letters">TMD</p>
+        </a>
+      </div>
+      <div class="header-nav">
+        <a class="header-links" href="./about">About Me</a>
+        <a class="header-links" href="./contact">Contact</a>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li class="nav-option">
+          <button id="light" class="nav-button">
+            <i class="fas fa-sun nav-i"></i>
+            <span class="nav-text">Light</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="dark" class="nav-button">
+            <i class="fas fa-moon nav-i"></i>
+            <span class="nav-text">Dark</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="terminal" class="nav-button" value="off" onclick="terminalInit()">
+            <i class="fas fa-terminal nav-i"></i>
+            <span class="nav-text">Terminal</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="matrix" class="nav-button">
+            <img src="./images/matrixlogo.png" class="matrix-img" />
+            <span class="nav-text">Matrix</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="eightBit" class="nav-button">
+            <i class="fas fa-gamepad nav-i"></i>
+            <span class="nav-text">8Bit</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main class="project-main">
+      <div class="terminal-row" id="terminalDiv">
+        <p class="terminal-header">
+          Hi! Type about, contact, or projects for more information. If you feel lost, type help.
+        </p>
+        <p class="terminal-text">client@TMD:~$</p>
+        <input id="terminalInput" class="terminal-input" type="text" onkeydown="terminalEnter(this)" />
+      </div>
+      <div class="project-photo-nohover">
+        <a href="https://cllean.web.app" target="_blank"
+          ><img class="project-photo-img" src="./images/cllean-1000x625.png"
+        /></a>
+      </div>
+      <div class="project-paragraph-row">
+        <p class="project-paragraph-p">
+          <a style="color: inherit;" href="https://cllean.web.app" target="_blank">Cllean.us</a>
+          is a car wash company who wished to innovate its scheduling system, which was only by phone, to an
+          eye-catching web application. This innovation would make the scheduling system more attractive to the costumer
+          due to the easiness of few clicks to schedule a wash instead of a lengthy call, and also unload the overflow
+          of calls on the scheduling department.<br />
+          <br />
+          The web application architecture would offer availability for all operational systems, either desktop or
+          mobile, leading to an easy and fast experience for the user. There is a landing page that points the user
+          towards the web apllication and it also provide some instructions on how to use the web app and the company's
+          contact information.
+        </p>
+      </div>
+      <hr style="margin: 0 0 25px;" />
+      <div class="project-photos-row">
+        <div class="project-photos-img-container-nohover">
+          <a href="https://cllean.web.app" target="_blank"
+            ><img class="project-photos-img" src="./images/cllean-phone.png"
+          /></a>
+        </div>
+        <div class="project-photos-text-container">
+          <p class="project-photos-p">
+            Cllean.us is able to provide the best user experience by being:
+          </p>
+          <ul class="project-photos-ul">
+            <li>
+              Straighforward Landing Page - Simple, clear, and modern design that points the user directly to the web
+              app.
+            </li>
+            <li>
+              Web-based Application - Skips the native app structure which presents slow installation, bigger storage
+              size, and higher memory allocation.
+            </li>
+            <li>
+              Progressive Web App - Makes it easily installable while taking little storage space.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- <div class="footer-social">
+        <div class="footer-social-image-container">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="footer-social-image-container">
+          <i class="fab fa-github-square"></i>
+        </div>
+        <div class="footer-social-image-container">
+          <a class="footer-links" href="mailto:thiagomdiogenes@gmail.com">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </div>
+      </div> -->
+      <div class="footer-copyright">
+        <small>&copy; 2020 Developed by Thiago Diogenes</small>
+      </div>
+    </footer>
+  </body>
+</html>

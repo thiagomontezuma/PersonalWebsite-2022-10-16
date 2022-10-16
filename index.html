@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiago Diogenes</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/exe3okr.css" />
+    <script src="https://kit.fontawesome.com/bf1c73beb5.js" crossorigin="anonymous"></script>
+    <script defer src="./js/app.js"></script>
+  </head>
+  <body class="light">
+    <div class="fullscreen-bg">
+      <video class="fullscreen-bg__video" autoplay muted loop poster="./images/matrix.gif">
+        <source src="./videos/matrix.mp4" type="video/mp4" />
+        <!-- <source src="./videos/matrix-webm.webm" type="video/webm" /> -->
+      </video>
+    </div>
+    <header>
+      <div class="header-logo">
+        <a class="header-links" href="/">
+          <p class="header-letters">TMD</p>
+        </a>
+      </div>
+      <div class="header-nav">
+        <a class="header-links" href="./about">About Me</a>
+        <a class="header-links" href="./contact">Contact</a>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li class="nav-option">
+          <button id="light" class="nav-button">
+            <i class="fas fa-sun nav-i"></i>
+            <span class="nav-text">Light</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="dark" class="nav-button">
+            <i class="fas fa-moon nav-i"></i>
+            <span class="nav-text">Dark</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="terminal" class="nav-button" value="off" onclick="terminalInit()">
+            <i class="fas fa-terminal nav-i"></i>
+            <span class="nav-text">Terminal</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="matrix" class="nav-button">
+            <img src="./images/matrixlogo.png" class="matrix-img" />
+            <span class="nav-text">Matrix</span>
+          </button>
+        </li>
+        <li class="nav-option">
+          <button id="eightBit" class="nav-button">
+            <i class="fas fa-gamepad nav-i"></i>
+            <span class="nav-text">8Bit</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="terminal-row" id="terminalDiv">
+        <p class="terminal-header">
+          Hi! Type about, contact, or projects for more information. If you feel lost, type help.
+        </p>
+        <p class="terminal-text">client@TMD:~$</p>
+        <input id="terminalInput" class="terminal-input" type="text" onkeydown="terminalEnter(this)" />
+      </div>
+      <div class="row" id="mainDiv">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 main-element">
+          <div class="main-element-img-container">
+            <a class="main-element-link" href="./project-trading">
+              <img class="main-element-img" src="./images/trading-450x300.png" />
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 main-element">
+          <div class="main-element-img-container">
+            <a class="main-element-link" href="./project-metronomo">
+              <img class="main-element-img" src="./images/metronomo-450x300.png" style="width: inherit;" />
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 main-element">
+          <div class="main-element-img-container">
+            <a class="main-element-link" href="./project-cllean">
+              <img class="main-element-img" src="./images/cllean-450x300.png" />
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 main-element">
+          <div class="main-element-img-container">
+            <a class="main-element-link" href="./project-tecnocar">
+              <img class="main-element-img" src="./images/tecnocar-450x300.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- <div class="footer-social">
+        <div class="footer-social-image-container">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="footer-social-image-container">
+          <i class="fab fa-github-square"></i>
+        </div>
+        <div class="footer-social-image-container">
+          <a class="footer-links" href="mailto:thiagomdiogenes@gmail.com">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </div>
+      </div> -->
+      <div class="footer-copyright">
+        <small>&copy; 2020 Developed by Thiago Diogenes</small>
+      </div>
+    </footer>
+  </body>
+</html>
